@@ -5,7 +5,6 @@
 }
 
 header {
-  width: 100%;
   padding: 50px;
   background-color: #ff9a4b;
 }
@@ -27,9 +26,8 @@ main {
 
 .img-box1 {
   background-image: url(img/flow01.png);
-  display: inline-block;
-  height: 150px;
-  padding: 300px;
+  background-size: 300px 150px;
+  background-position: bottom;
 }
 
 .step {
@@ -41,7 +39,6 @@ main {
 }
 
 footer {
-  width: 100%;
   padding: 50px;
   background-color: #aaaaaa;
 }
