@@ -12,30 +12,56 @@ header {
 main {
   width: 960px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 50 auto;
-  padding: 600px;
+  /* padding: 600px; */
 }
 
-.box1 {
+.box {
   width: 300px;
-  padding: 350px;
+  /* padding: 350px; */
   margin: 30px;
   background-color: #eeeeee;
+   position: static;
 }
 
+
+.box:last-child {
+ margin: right;
+}
+
+/* 高さ指定がなくて写真が出ない？→clear. */
 .img-box1 {
   background-image: url(img/flow01.png);
   background-size: 300px 150px;
-  background-position: bottom;
+  background-position: center;
+  height: 150px;
 }
 
+.img-box2 {
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 150px;
+
+}
+
+.img-box3 {
+  background-image: url(img/flow03.png);
+  background-size: 300px 150px;
+  background-position: bottom 50px right 50px;
+  height: 150px;
+}
+
+
+/* 配置のための要素は"position"で表記(9章より)*/
 .step {
   display: inline-block;
   padding: 1px 1px;
   background-color: #ff9a4b;
   color: #fff;
   font-size: 20px;
+  position: relative;
 }
 
 footer {
